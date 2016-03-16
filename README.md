@@ -1,2 +1,2 @@
-# spring_pactice
+# Spring Pactice
 Repo for practicing Spring.
