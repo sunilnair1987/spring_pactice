@@ -12,7 +12,7 @@ Tools and JAR versions
 --------------------------------------------
 Folders
 --------------------------------------------
-1. "Hello Spring" folder contains example of spring core i.e.
+1. "Spring_Core" folder contains example of spring core i.e.
 IOC and examples of spring with application similar to helloworld.
 
 2. "Spring_MVC" folder contains example Spring MVC as the name suggests.
