@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- A bean can also be declared as abtract by setting the abstract attribute -->
+	<!-- of the bean tag. If a bean has been marked as abstract then no object can -->
+	<!-- be instantiated by using that bean id. It must be inherited by another bean. -->
+	<bean id="bean1" class="com.springpractice.bean.BeanClass1"> <!-- abstract="true"> -->
+		<property name="message1" value="Hello, this is message1 from bean1"/>
+		<property name="message2" value="Hi, this is message2 from bean1"/>
+	</bean>
+	<!-- As far as I have understood, only properties can be inherited this way. -->
+	<!-- Methods cannot be inherited using xml configuration. For that we have used java inheritance.-->
+	<bean id="bean2" class="com.springpractice.bean.BeanClass2" parent="bean1">
+		<property name="message1" value="Hello, this is message1 from bean2"/>
+		<property name="message3" value="Hola, this is message3 from bean2"/>
+	</bean>
+
+</beans>
